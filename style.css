@@ -1,0 +1,398 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(28, 27, 27);
+}
+ul{
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+nav{
+    background-color: rgb(28, 27, 27);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+   
+}
+.mneu{
+    font-family: 'Roboto', Arial;
+    font-size: 18px;
+    width: 60%;
+    display: flex;
+    justify-content:space-between;
+    margin-top: 15px;   
+    
+}
+.mneu li{
+    text-align: center;
+    width: 100%;
+   position: relative;
+   transition: 0.22s;
+}
+.mneu li a{
+    color: gold;
+    text-decoration: none;
+    transition: 0.22s;
+
+}
+/* .mneu li ::before{
+    position: absolute;
+    bottom: -10px;
+    content: "";
+    width: 100%;
+    height: 10px;
+    background-color: gold;
+    opacity: 1;
+    border-radius: 50%;
+    box-shadow: 0px -5px 10px gold;
+    opacity: 0;
+} */
+.line{
+    width:97%;
+    height: 4px;
+    background-color: gold;
+    position: absolute;
+    bottom:-5px;
+   opacity: 0;
+    transform: scale(0.00001);
+    box-shadow: 0px -20px 40px gold;
+    border-radius: 10px;
+    transition: 0.22s;
+    
+   
+}
+.mneu li:hover .line{
+    opacity: 1;
+    transform: scale(0.7); 
+}
+.mneu li:active .line{
+  transform:scale(1);
+  box-shadow: 0px -20px 40px black;
+}
+/* .mneu li :hover :before{
+    opacity: 1;
+} */
+
+/* @keyframes bosh{
+    0%{
+        transform: translatey(10px);
+    }
+    to{
+        transform: translatey(0px);
+    }
+
+} */
+
+/* backgound in the header */
+
+.background{
+    width: 100%;
+    height: 100vh;
+    background-image: url('image/used.png');
+    background-size: cover;
+    background-position: 15px ;
+}
+
+/* 3 div contain pargraf below the header */
+
+.all-pargraf{
+   
+    margin-top: 50px;
+    width: 100%;
+    min-height: 250px;
+    height:atuo;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pragraf{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color:gold;
+    width: 30%;
+    min-height: 250px;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: 0.22s;
+}
+
+.pragraf:hover{
+    box-shadow: 3px 3px 5px gold;
+    transform: scale(1.02);
+}
+main h1{
+    color: gold;
+    text-align: center;
+    margin-top: 50px;
+}
+.pragraf h2{
+    color: blcak;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+.pragraf img{
+    width: 50px;
+    margin-bottom: 10px;
+    border: 3px solid black;
+    color: gold;
+    border-radius: 20px;
+    transition: 0.22s;
+}
+
+.pragraf img:hover{
+    transform: scale(1.3);
+}
+
+
+
+
+
+/* ######### three pargraf contain different parson in this area with his photo  ########## */
+
+
+
+
+
+.about-parson{
+    width:100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 150px;
+    font-family: roboto,arial;
+    line-height: 1.4;
+}
+
+.parson{
+    width: 30%;
+    min-height: 100vh;
+    height: auto;
+    /* border-top-left-radius:50px  80px;
+    border-top-right-radius:7px;
+    border-bottom-right-radius:20px; */
+    border-radius:50px;
+    background-color:black;
+    transition: 0.22s;
+    text-align: center;
+}
+
+.parson:hover{
+    box-shadow:  0px 0px 20px gold;
+}
+.up-box{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.down-box{
+    margin-top:10px ;
+    color: gold;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.up-box img{
+    width:90px ;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid gold;
+    transition: 0.22s;
+    margin-bottom: 15px;
+}
+.up-box img:hover{
+    transform: scale(2.4);
+    cursor: pointer;
+    box-shadow:  0px 0px 10px gold;
+}
+.up-box h2{
+    margin-bottom:20px;
+    color: gold;
+    text-shadow: 0px -1px 2px gold;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    width: 50%;
+   color:gold;
+}
+form{
+    box-shadow: 0px 0px 10px gold;
+    position: relative;
+    margin: 50px auto;
+    border-radius: 10px;
+    width: 70%;
+    background-color:rgb(20, 19, 19);
+    border: 1px solid gold;
+}
+
+.btn-primary {
+    top: 80%;
+    right: 10%;
+    position: absolute;
+    color: black;
+    background-color: gold;
+    border-color: black;
+    font-family: roboto;
+}
+
+.btn-primary:hover{
+    box-shadow: 0px 0px 10px gold;
+    border-color: gold;
+    background-color: gold;
+    color: black;
+    
+}
+footer{
+    padding: 20px;
+    font-family: roboto, arial;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gold;
+    background-color: rgb(20, 19, 19);
+    border-top: 20px double gold;
+    box-shadow: 0px -5px 10px gold;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 217, 0, 0.707);
+    border-radius: 10px;
+    
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: gold;
+    box-shadow:inset 0px 0px 3px black;
+}
+::-webkit-scrollbar-corner{
+    background-color: gold;
+}
+
+@media  screen and (max-width:999px)  {
+
+    .background{
+        background-position: 50%;
+    }
+
+    .mneu{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .all-pargraf{
+        display: flex;
+        flex-wrap: wrap;
+    }
+     
+    .pragraf{
+        width: 40%;
+        margin: 15px auto;
+    }
+
+
+    .about-parson{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .parson{
+        width: 40%;
+        margin: 20px;
+    }
+
+    .btn-primary {
+        top: 80%;
+        right: 10%;
+        position: absolute;
+        color: black;
+        background-color: gold;
+        border-color: black;
+        font-family: roboto;
+    }
+
+}
+@media screen and (max-width:750px) {
+    .all-pargraf{
+        display: flex;
+        flex-wrap: wrap;
+    }
+     
+    .pragraf{
+        width: 80%;
+        margin: 15px auto;
+    }
+
+    .about-parson{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .parson{
+        width: 80%;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+
+    .mneu{
+        width: 90%;
+    }
+    .background {
+        background-size: 150%;
+        background-position: 50%;
+    }
+    
+
+
+    .all-pargraf{
+        display: flex;
+        flex-wrap: wrap;
+    }
+     
+    .pragraf{
+        width: 80%;
+        margin: 15px auto;
+    }
+
+    .about-parson{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .parson{
+        width: 80%;
+        margin: 20px;
+    }
+}
